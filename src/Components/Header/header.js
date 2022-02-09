@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 //Import images
 import Images from '../../importImages'
@@ -8,13 +8,13 @@ import Images from '../../importImages'
 import './header.css'
 
 const Header =()=>{
-    let location = useLocation().pathname;
+    // let location = useLocation().pathname;
     
-    function checkActive(path){
-        if (location === path){
-            return "className='active'";
-        }
-    }
+    // function checkActive(path){
+    //     if (location === path){
+    //         return "className='active'";
+    //     }
+    // }
     return (
         <>
             <header>
