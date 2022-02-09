@@ -10,9 +10,48 @@ import Header from "../Header/header";
 import Images from "../../importImages";
 
 const Dashboard =()=>{
+    function onSubmit(e){
+        e.preventDefault()
+    }
+  
     return (
         <>
             <Header />
+            <div className="serverPopup">
+                <div className="newServer">
+                    <h4>Create a server</h4>
+                    <form onSubmit={onSubmit}>
+                        <div className="form">
+                            <span>Enter server details</span>
+                            <div className="formbody">
+                                <div className="form-group">
+                                    <label>Server name</label>
+                                    <input type="text" required />
+                                </div>
+                                <div className="form-group">
+                                    <label>Server IP</label>
+                                    <input type="text" required/>
+                                </div>
+                                <div className="form-group">
+                                    <label>CPU</label>
+                                    <input type="text" required/>
+                                </div>
+                                <div className="form-group">
+                                    <label>Storage</label>
+                                    <input type="text" required/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="buttons">
+                            <span onClick={()=> document.querySelector(".serverPopup").classList.remove("active") } className="cancel">Cancel</span>
+                            <button className="create">Create</button>
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
             <section id="server" className="server">                
 
                 <div className="serverBody">
@@ -26,13 +65,13 @@ const Dashboard =()=>{
                                 <select>
                                     <option>Active Status</option>
                                     <option>Active</option>
-                                    <option>Insctive</option>
+                                    <option>Inactive</option>
                                     <option>All</option>
                                 </select>
                             </div>   
                         </div>
                         <div className="form-right">
-                            <Link to="/">Create Server</Link>
+                            <span onClick={()=> document.querySelector(".serverPopup").classList.add("active") }>Create Server</span>
                         </div>
                                         
                     </div>

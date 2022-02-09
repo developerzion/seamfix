@@ -10,9 +10,26 @@ import Header from "../Header/header";
 import Images from "../../importImages";
 
 const Dashboard =()=>{
+    function deactivate(){
+        document.querySelector(".deactivate").classList.add("active")
+    }
     return (
         <>
             <Header />
+
+            <div className="deactivate">
+                <div className="d-alert">
+                    <span className="fa fa-times remove" onClick={()=>document.querySelector(".deactivate").classList.remove("active")}></span>
+
+                    <h4>Deactivate Server</h4>
+                    <p>Are you sure you want to deactivate <b>Server name 1?</b> if you <b>Continue you will no longer receive data from this server</b></p>
+                    <div className="btn">
+                        <span className="btn-dactive">Deactivate</span>
+
+                    </div>
+                </div>
+
+            </div>
             <section id="dashbaord" className="dashbaord">
 
                 <div className="dashcards">
@@ -125,7 +142,28 @@ const Dashboard =()=>{
                                             <span className="circle-green">&nbsp;</span> <span>Application name goes here</span> 
                                         </div>
                                     </td>
-                                    <td className="blue">3 Servers</td>
+                                    <td>
+                                        <div className="serverTips">
+                                            <span className="blue">3 Servers</span>
+                                            <div className="sTooltips">
+                                                <div className="tips">
+                                                    <div className="tips-data">
+                                                        <span><f className="fa fa-arrow-right"></f> Server 1: </span> 
+                                                        <span><span className="circle-green-small"></span> Running </span> 
+                                                    </div>
+                                                    <div className="tips-data">
+                                                        <span><f className="fa fa-arrow-right"></f> Server 2: </span> 
+                                                        <span> <span className="circle-green-small"></span> Running </span> 
+                                                    </div>
+                                                    <div className="tips-data">
+                                                        <span><f className="fa fa-arrow-right"></f> Server 3: </span> 
+                                                        <span><span className="circle-green-small"></span> Running </span> 
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </td>
                                     <td>11/12/20 3: 57:29 PM</td>
                                     <td>
                                         <div className="tflex">
@@ -133,7 +171,12 @@ const Dashboard =()=>{
                                         </div>
                                      </td>
                                     <td><Link to="">View Result</Link></td>
-                                    <td><span className="fa fa-ellipsis-h rotate"></span></td>
+                                    <td>
+                                        <div className="tips">
+                                            <span className="fa fa-ellipsis-h rotate"></span>
+                                            <span className="tooltip" onClick={ deactivate }>Deactivate</span>
+                                        </div> 
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
@@ -142,11 +185,32 @@ const Dashboard =()=>{
                                             <span className="circle-green">&nbsp;</span> <span>Application name goes here</span> 
                                         </div>
                                     </td>
-                                    <td className="blue">2 Servers</td>
+                                    <td>
+                                        <div className="serverTips">
+                                            <span className="blue">3 Servers</span>
+                                            <div className="sTooltips">
+                                                <div className="tips">
+                                                    <div className="tips-data">
+                                                        <span><f className="fa fa-arrow-right"></f> Server 1: </span> 
+                                                        <span><span className="circle-green-small"></span> Running </span> 
+                                                    </div>
+                                                    <div className="tips-data">
+                                                        <span><f className="fa fa-arrow-right"></f> Server 2: </span> 
+                                                        <span> <span className="fa fa-times colorRed"></span> Critical </span> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
                                     <td>11/12/20 3: 57:29 PM</td>
                                     <td><img src={Images.Triangle} alt="Triangle" /></td>
                                     <td><Link to="">View Result</Link></td>
-                                    <td><span className="fa fa-ellipsis-h rotate"></span></td>
+                                    <td>
+                                        <div className="tips">
+                                            <span className="fa fa-ellipsis-h rotate"></span>
+                                            <span className="tooltip" onClick={ deactivate }>Deactivate</span>
+                                        </div>     
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
@@ -155,11 +219,32 @@ const Dashboard =()=>{
                                             <span className="circle-green">&nbsp;</span> <span>Application name goes here</span> 
                                         </div>
                                     </td>
-                                    <td className="blue">2 Servers</td>
+                                    <td>
+                                        <div className="serverTips">
+                                            <span className="blue">3 Servers</span>
+                                            <div className="sTooltips">
+                                                <div className="tips">
+                                                    <div className="tips-data">
+                                                        <span><f className="fa fa-arrow-right"></f> Server 1: </span> 
+                                                        <span><span className="circle-green-small"></span> Running </span> 
+                                                    </div>
+                                                    <div className="tips-data">
+                                                        <span><f className="fa fa-arrow-right"></f> Server 2: </span> 
+                                                        <span><span className="circle-green-small"></span> Running </span> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
                                     <td>11/12/20 3: 57:29 PM</td>
                                     <td><span className="circle-green"><i className="fa fa-check"></i></span></td>
                                     <td><Link to="">View Result</Link></td>
-                                    <td><span className="fa fa-ellipsis-h rotate"></span></td>
+                                    <td>
+                                        <div className="tips">
+                                            <span className="fa fa-ellipsis-h rotate"></span>
+                                            <span className="tooltip" onClick={ deactivate }>Deactivate</span>
+                                        </div>     
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
@@ -168,11 +253,36 @@ const Dashboard =()=>{
                                             <span className="circle-green"></span> <span>Application name goes here</span> 
                                         </div>
                                     </td>
-                                    <td className="blue">3 Servers</td>
+                                    <td>
+                                        <div className="serverTips">
+                                            <span className="blue">3 Servers</span>
+                                            <div className="sTooltips">
+                                                <div className="tips">
+                                                    <div className="tips-data">
+                                                        <span><f className="fa fa-arrow-right"></f> Server 1: </span> 
+                                                        <span><span className="circle-green-small"></span> Running </span> 
+                                                    </div>
+                                                    <div className="tips-data">
+                                                        <span><f className="fa fa-arrow-right"></f> Server 2: </span> 
+                                                        <span><span className="circle-green-small"></span> Running </span> 
+                                                    </div>
+                                                    <div className="tips-data">
+                                                        <span><f className="fa fa-arrow-right"></f> Server 3: </span> 
+                                                        <span> <span className="fa fa-check"></span> Down </span> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
                                     <td>11/12/20 3: 57:29 PM</td>
                                     <td><span className="circle-green"><i className="fa fa-check"></i></span></td>
                                     <td><Link to="">View Result</Link></td>
-                                    <td><span className="fa fa-ellipsis-h rotate"></span></td>
+                                    <td>
+                                        <div className="tips">
+                                            <span className="fa fa-ellipsis-h rotate"></span>
+                                            <span className="tooltip" onClick={ deactivate }>Deactivate</span>
+                                        </div>                                        
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>5</td>
@@ -181,11 +291,32 @@ const Dashboard =()=>{
                                             <span className="circle-red">&nbsp;</span> <span>Application name goes here</span> 
                                         </div>
                                     </td>                                        
-                                    <td className="blue">3 Servers</td>
+                                    <td>
+                                        <div className="serverTips">
+                                            <span className="blue">3 Servers</span>
+                                            <div className="sTooltips">
+                                                <div className="tips">
+                                                    <div className="tips-data">
+                                                        <span><f className="fa fa-arrow-right"></f> Server 1: </span> 
+                                                        <span><span className="circle-green-small"></span> Running </span> 
+                                                    </div>
+                                                    <div className="tips-data">
+                                                        <span><f className="fa fa-arrow-right"></f> Server 2: </span> 
+                                                        <span><span className="circle-green-small"></span> Running </span> 
+                                                    </div>                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
                                     <td>11/12/20 3: 57:29 PM</td>
                                     <td><span className="circle-green"><i className="fa fa-check"></i></span></td>
                                     <td><Link to="">View Result</Link></td>
-                                    <td><span className="fa fa-ellipsis-h rotate"></span></td>
+                                    <td>
+                                        <div className="tips">
+                                            <span className="fa fa-ellipsis-h rotate"></span>
+                                            <span className="tooltip" onClick={ deactivate }>Deactivate</span>
+                                        </div>      
+                                    </td>
                                 </tr>
                                
                                 

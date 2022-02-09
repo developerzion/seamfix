@@ -20,6 +20,9 @@
     background: var(--red);
     color: var(--white);
 }
+.colorRed{
+    color:  #FF4343F7;
+}
 .gold{
     background: var(--gold);
     color: var(--white);
@@ -43,7 +46,121 @@
 }
 .rotate{
     transform: rotate(90deg);
+    cursor: pointer;
 }
+.circle-green-small{
+    display: inline-block;
+    width: 10px;
+    border-radius: 50%;
+    height: 10px;
+    background: var(--green);
+    line-height: 15px;
+}
+
+/* Normal tooltips */
+.tooltip{
+    visibility: hidden;
+    padding: .4rem .6rem;
+    box-shadow: 0px 1px 2px #00000029;    
+    border-radius: 4px;
+    position: absolute;
+    right: 7.5rem;
+    background: var(--white);
+    z-index: 1;
+    font-size: .8rem;
+    cursor: pointer;
+}
+.tips:hover .tooltip{    
+    visibility: visible;
+}
+/* Dashboard tooltips */
+.serverTips{
+    position: relative;
+    z-index: 1;
+}
+.serverTips:hover .sTooltips{
+    visibility: visible;
+}
+.serverTips .sTooltips{
+    visibility: hidden;
+    width: 10rem;
+    /* min-height: rem; */
+    box-shadow: 0px 1px 2px #00000029;
+    background: var(--white);
+    position: absolute;
+    left: 10rem;
+    top: 0;
+    color: var(--text-black);
+    padding: .6rem 1rem;
+
+}
+.serverTips .sTooltips .tips{
+    width: 100%;
+    align-items: center;
+    font-size: .7rem;
+}
+.serverTips .sTooltips .tips .tips-data{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.serverTips .sTooltips .tips .tips-data:last-child{
+    margin-bottom: 0;
+}
+
+
+
+/* Deactivate popup */
+.deactivate{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, .8);
+    z-index: 3;
+}
+.deactivate.active{
+    display: inline-block;
+}
+.deactivate .d-alert .remove{
+    cursor: pointer;
+    position: absolute;
+    right: -1.2rem;
+    top: -1.2rem;
+    color: var(--white);
+}
+.deactivate .d-alert{
+    position: absolute;
+    width: 25rem;
+    height: 15rem;
+    border-radius: 4px;
+    background: var(--white);
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+}
+.deactivate .d-alert p{
+    font-size: .7rem;
+    color: var(--text-black);
+    margin-top: 2rem;
+}
+.deactivate .d-alert .btn{
+    width: 100%;    
+    text-align: center;
+}
+.deactivate .d-alert .btn .btn-dactive{
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background: teal;
+    border-radius: 4px;
+    color: var(--white);
+}
+
+
+
+
 .dashbaord .dashcards{
     display: flex;
     flex-wrap: wrap;
@@ -79,17 +196,17 @@
     background: var(--white);
 }
 .dashbaord .dashcards .card .stats .stat span.bullet{
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
-    line-height: 66px;
-    width: 66px; height: 66px;
+    line-height: 50px;
+    width: 50px; height: 50px;
     display: inline-block;
     text-align: center;
     border-radius: 50%;
 }
 .dashbaord .dashcards .card .text{
     display: flex;
-    gap: 3rem;
+    gap: 3.8rem;
     background: var(--white);
     margin-top: 1rem;
     padding: 0 1.5rem;
@@ -107,12 +224,12 @@
 }
 .dashbaord .dashcards .card .count h1{
     background: var(--white);
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 400;
     color: var(--darkblue);
 }
 .dashbaord .dashcards .card .count span{
-    margin-top: 1rem;
+    margin-top: .6rem;
     display: inline-block;
     background: var(--white);
 }
@@ -190,7 +307,7 @@
     color: #000B14;;
 }
 .dashbaord .dashBody .table-body table thead tr, .dashbaord .dashBody .table-body table tbody tr{
-    height: 3rem;
+    height: 3.5rem;
 }
 .dashbaord .dashBody .table-body table tbody tr{
     border: 2px solid var(--text-black);

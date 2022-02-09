@@ -10,12 +10,65 @@ import Header from "../Header/header";
 import Images from "../../importImages";
 
 const Application =()=>{
+
+    function onSubmit(e){
+        e.preventDefault()
+    }
     return (
         <>
             <Header />
-            <section id="server" className="server">                
+            <div className="applicationPopup">
+                <div className="newApplication">
+                    <h4>Define Application</h4>
+                    <form onSubmit={onSubmit}>
+                        <div className="form">
+                            <div className="formbody">
+                                <div className="form-group">
+                                    <label>Application Name</label>
+                                    <input type="text" required />
+                                </div>
+                                <div className="form-group">
+                                    <label>Application Type</label>
+                                    <input type="text" required/>
+                                </div>
+                                <div className="form-group">
+                                    <label>Application DCSC</label>
+                                    <input type="text" required/>
+                                </div>
+                                <div className="form-group">
+                                    <label>Application Port</label>
+                                    <input type="text" required/>
+                                </div>
+                                <div className="form-group">
+                                    <label>End Point</label>
+                                    <input type="text" required/>
+                                </div>
+                                <div className="form-group">
+                                    <label>Host/application</label>
+                                    <input type="checkbox" required/>
+                                </div> 
 
-                <div className="serverBody">
+                                <div className="selectApp">
+                                    <span>Select Application</span>
+                                    <div className="ip">
+                                        <p><input type="checkbox" /> 10.1.101.53</p>
+                                        <p><input type="checkbox" /> 10.1.101.54</p>
+                                        <p><input type="checkbox" /> 10.1.101.55</p>
+                                        <p><input type="checkbox" /> 10.1.101.56</p>
+                                    </div>
+                                </div>                               
+                            </div>
+                        </div>
+                        <div className="buttons">
+                            <span onClick={()=> document.querySelector(".applicationPopup").classList.remove("active")} className="cancel">Cancel</span>
+                            <button className="create">Create</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <section id="application" className="application">                
+
+                <div className="applicationBody">
                     <div className="form">
                         <div className="form-left">
                             <div className="field-body-input">
@@ -26,15 +79,14 @@ const Application =()=>{
                                 <select>
                                     <option>Active Status</option>
                                     <option>Active</option>
-                                    <option>Insctive</option>
+                                    <option>Inactive</option>
                                     <option>All</option>
                                 </select>
                             </div>    
                         </div> 
                         <div className="form-right">
-                            <Link to="/">Add Application</Link>
-                        </div>
-                                        
+                            <span onClick={()=> document.querySelector(".applicationPopup").classList.add("active")}>Add Application</span>
+                        </div>                                        
                     </div>
 
                     <div className="table-body">
@@ -42,7 +94,6 @@ const Application =()=>{
                             <img src={Images.Pdf } alt="PDF" />
                             <img src={Images.Xls } alt="xls" />
                             <span>Showing 10 of 5000 entries</span>
-
                         </div>
                         <table cellSpacing="0">
                             <thead>
@@ -53,7 +104,7 @@ const Application =()=>{
                                     <td>APPLICATION DCSC</td>
                                     <td>APPLICATION PORT</td>
                                     <td>END PORT</td>
-                                    <td>HOST/SERVER</td>
+                                    <td>HOST/application</td>
                                     <td>ACTION</td>
                                     <td></td>
                                 </tr>

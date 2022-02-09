@@ -25,7 +25,7 @@
     color: var(--white);
 
 }
-.server{
+.application{
     padding: 0 2rem;
     margin-top: 12rem;
     margin-bottom: 4rem;
@@ -47,24 +47,136 @@
     margin-right: 1rem;
 }
 
-.server .serverBody{
+
+.applicationPopup{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    z-index: 100;
+    top: 0;
+    transition: all 1s ease-in-out; 
+}
+.applicationPopup.active{
+    display: inline-block;
+}
+.applicationPopup .newApplication{
+    position: absolute;
+    top: 50%; left: 50%;
+    background: var(--white);
+    width: 45rem ;
+    height: 35rem;
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+    padding: 2rem 3rem;
+    /* overflow: hidden; */
+}
+.applicationPopup .newApplication .form{
+    padding: 0 6rem;
+    margin: 0 auto;
+    position: relative;
+    width: 40rem;
+    height: 25rem;
+    margin-top: 2rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+}
+.applicationPopup .newApplication .form::-webkit-scrollbar {
+    display: none; 
+}
+.applicationPopup .newApplication .form span{
+    font-size: .9rem;
+    color: var(--text-black);
+}
+.applicationPopup .newApplication .form .formbody{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    margin-top: 1.5rem;
+    position: relative;
+}
+.applicationPopup .newApplication .form .formbody .form-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-black);
+    font-size: .9rem;
+}
+.applicationPopup .newApplication .form .formbody .form-group input[type=text]{
+    width: 300px;
+    height: 33px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 0.5px solid #707070;
+    border-radius: 2px;
+    opacity: 1;
+    padding: 0 1rem;
+}
+.applicationPopup .newApplication .form .formbody .form-group input[type=checkbox]{
+    position: absolute;
+    left: 9.3rem;
+}
+.applicationPopup .newApplication .form .formbody .selectApp{
+    position: absolute;
+    left: 9.3rem;
+    bottom: -10rem;
+}
+.applicationPopup .newApplication .form .formbody .selectApp .ip{
+    border: 0.5px solid #707070;
+    padding: .5rem 1rem;
+    width: 18.5rem;
+    margin-top: .3rem;
+}
+.applicationPopup .newApplication .form .formbody .selectApp .ip p{
+    font-size: .8rem;
+    margin-bottom: .5rem;
+    border-bottom: 1px solid grey;
+}
+.applicationPopup .newApplication .form .formbody .selectApp .ip p input[type=checkbox]{
+    outline: 2px solid var(--light-blue);
+    border: 0;
+}
+.applicationPopup .newApplication .buttons{
+    position: absolute;
+    bottom: 1.4rem;
+    right: 2rem;
+    font-size: .9rem;
+}
+.applicationPopup .newApplication .buttons .create{
+    padding: .7rem 1.5rem;
+    background: var(--light-blue);
+    border-radius: 4px;
+    margin-left: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+.applicationPopup .newApplication .buttons .cancel{
+    background: var(--white);
+    cursor: pointer;
+}
+
+
+
+
+.application .applicationBody{
     width: 100%;
     height: 40rem;
     background: var(--white);
     margin-top: 2rem;
     padding: 2rem 3rem;
 }
-.server .serverBody .form{
+.application .applicationBody .form{
     background: var(--white);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.server .serverBody .form .form-left{
+.application .applicationBody .form .form-left{
     display: flex;
     gap: 1rem;
 }
-.server .serverBody .form .form-left .field-body-input{
+.application .applicationBody .form .form-left .field-body-input{
     display: flex;
     align-items: center;
     font-size: 1.3rem;
@@ -75,13 +187,13 @@
     opacity: 1;
     background: var(--body);
 }
-.server .serverBody .form .form-left .field-body-input input{
+.application .applicationBody .form .form-left .field-body-input input{
     width: 100%;
     height: 100%;
     padding: 0 1rem;
     background: var(--body);
 }
-.server .serverBody .form .form-left .field-body-select{
+.application .applicationBody .form .form-left .field-body-select{
     display: flex;
     align-items: center;
     width: 13rem;
@@ -91,24 +203,26 @@
     border-radius: 3px;
     opacity: 1;
 }
-.server .serverBody .form .form-left .field-body-select select{
+.application .applicationBody .form .form-left .field-body-select select{
     width: 100%;
     background: var(--white);
 }
-.server .serverBody .form .form-right a{
+.application .applicationBody .form .form-right span{
     padding: .6rem 1.5rem;
     background: var(--light-blue);
     font-size: .8rem;
     font-weight: 600;
     border-radius: 4px;
+    cursor: pointer;
+    color: var(--darkblue);
 }
 
 
 
-.server .serverBody .table-body{
+.application .applicationBody .table-body{
     margin-top: 2rem;
 }
-.server .serverBody .table-body .table-top{
+.application .applicationBody .table-body .table-top{
     display: flex;
     align-items: center;
     font-size: .8rem;
@@ -116,26 +230,26 @@
     gap: .5rem;
     justify-content: right;
 }
-.server .serverBody .table-body table{
+.application .applicationBody .table-body table{
     width: 100%;
     margin-top: 1rem;
     font-size: .9rem;
     text-align: center;
     border: 0;
 }
-.server .serverBody .table-body table thead{
+.application .applicationBody .table-body table thead{
     background: var(--body);
     font-weight: 600;
     color: #000B14;;
 }
-.server .serverBody .table-body table thead tr, .server .serverBody .table-body table tbody tr{
-    height: 3rem;
+.application .applicationBody .table-body table thead tr, .application .applicationBody .table-body table tbody tr{
+    height: 3.5rem;
 }
-.server .serverBody .table-body table tbody tr{
+.application .applicationBody .table-body table tbody tr{
     border: 2px solid var(--text-black);
 }
 
-.server .serverBody .table-body table tbody tr td span.circle-green{
+.application .applicationBody .table-body table tbody tr td span.circle-green{
     display: inline-block;
     width: 15px;
     border-radius: 50%;
@@ -143,44 +257,44 @@
     background: var(--green);
     line-height: 15px;
 }
-.server .serverBody .table-body table tbody tr td span.circle-red{
+.application .applicationBody .table-body table tbody tr td span.circle-red{
     display: inline-block;
     width: 15px;
     border-radius: 50%;
     height: 15px;
     background: var(--red);
 }
-.server .serverBody .table-body table tbody tr td a{
+.application .applicationBody .table-body table tbody tr td a{
     background: var(--light-blue);
     padding: .5rem 1.5rem;
     border-radius: 4px;
 }
-.server .serverBody .table-body table tbody tr td i{
+.application .applicationBody .table-body table tbody tr td i{
     color: var(--white);
     font-size: .5rem;
 }
-.server .serverBody .pagination{
+.application .applicationBody .pagination{
     margin-top: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.server .serverBody .pagination .buttons{
+.application .applicationBody .pagination .buttons{
     display: flex;
     align-items: center;
     gap: 1rem;
     font-size: .8rem;
 }
-.server .serverBody .pagination .buttons a{
+.application .applicationBody .pagination .buttons a{
     color: var(--text-black);
     font-weight: 600;
 }
-.server .serverBody .pagination .buttons a.active{
+.application .applicationBody .pagination .buttons a.active{
     background: var(--light-blue);
     color: var(--white);
     padding: .5rem 1rem;
 }
-.server .serverBody .pagination .buttons a:hover{
+.application .applicationBody .pagination .buttons a:hover{
     background: var(--light-blue);
     color: var(--white);
     padding: .5rem 1rem;

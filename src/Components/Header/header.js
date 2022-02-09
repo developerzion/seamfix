@@ -23,7 +23,7 @@ const Header =()=>{
                 </div>
                 <div className="header-bottom">
                     <div className="navbar">
-                        <Link to="/"><img src={Images.Home} alt="Home" /> <span className="text">Home</span></Link>
+                        <Link className="active" to="/"><img src={Images.Home} alt="Home" /> <span className="text">Home</span></Link>
                         <Link to="/server"><img src={Images.Server} alt="Server" /> <span className="text">Server</span></Link>
                         <Link to="/application"><img src={Images.Application} alt="Application" /> <span className="text">Application</span></Link>
                     </div>
