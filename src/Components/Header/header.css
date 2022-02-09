@@ -1,0 +1,63 @@
+:root{
+    --header-top-color: #1B1464;
+    --header-bottom-color: #FFFFFF;
+    --light-blue: #49D3FF;
+}
+
+header{
+    position: fixed;
+    top: 0; right: 0; left: 0;
+}
+.header-top{
+    height: 80px;
+    width: 100%;
+    background: var(--header-top-color);
+    line-height: 80px;
+    padding: 1rem;
+}
+.header-top .logo{
+    background: var(--header-top-color);
+}
+.header-bottom{
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    background: var(--header-bottom-color);
+    box-shadow: 0px 1px 2px #4D4C4C29;
+}
+.header-bottom .navbar{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    background: var(--header-bottom-color);
+}
+.header-bottom .navbar a{
+    display: flex;
+    gap: .2rem;
+    align-items: center;
+    background: var(--header-bottom-color);
+    padding: 1.7rem 0rem;
+
+}
+.header-bottom .navbar a.active{
+    border-bottom: 4px solid var(--light-blue);
+}
+.header-bottom .navbar a:hover{
+    border-bottom: 4px solid var(--light-blue);
+}
+.header-bottom .navbar a img{
+    background: var(--header-bottom-color);
+}
+.header-bottom .navbar a span{
+    background: var(--header-bottom-color);    
+}
+
+.header-bottom .health-status a{
+    background: var(--light-blue);
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    font-weight: 500;
+}

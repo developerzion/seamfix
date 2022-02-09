@@ -1,0 +1,188 @@
+:root{
+    --darkblue: #1B1464;
+    --white: #FFFFFF;
+    --light-blue: #49D3FF;
+    --text-black: #262626;
+    --green: #24C977;
+    --red: #FF4343F7;
+    --gold:#E0B237;    
+    --body: #F1F3F5;
+}
+
+.blue{
+    color: var(--light-blue);
+}
+.green{
+    background: var(--green);
+    color: var(--white);
+}
+.red{
+    background: var(--red);
+    color: var(--white);
+}
+.gold{
+    background: var(--gold);
+    color: var(--white);
+
+}
+.server{
+    padding: 0 2rem;
+    margin-top: 12rem;
+    margin-bottom: 4rem;
+}
+.border{
+    background: var(--white);
+    border: 3px solid var(--darkblue);
+    color: var(--darkblue);
+}
+.tflex{
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    justify-content: center;
+}
+
+.rotate{
+    transform: rotate(90deg);
+    margin-right: 1rem;
+}
+
+.server .serverBody{
+    width: 100%;
+    height: 40rem;
+    background: var(--white);
+    margin-top: 2rem;
+    padding: 2rem 3rem;
+}
+.server .serverBody .form{
+    background: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.server .serverBody .form .form-left{
+    display: flex;
+    gap: 1rem;
+}
+.server .serverBody .form .form-left .field-body-input{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    width: 20rem;
+    height: 2.2rem;
+    padding: 0 1rem;
+    border-radius: 3px;
+    opacity: 1;
+    background: var(--body);
+}
+.server .serverBody .form .form-left .field-body-input input{
+    width: 100%;
+    height: 100%;
+    padding: 0 1rem;
+    background: var(--body);
+}
+.server .serverBody .form .form-left .field-body-select{
+    display: flex;
+    align-items: center;
+    width: 13rem;
+    padding: 0 1rem;
+    background: var(--white);
+    border: 0.5px solid #525757;
+    border-radius: 3px;
+    opacity: 1;
+}
+.server .serverBody .form .form-left .field-body-select select{
+    width: 100%;
+    background: var(--white);
+}
+.server .serverBody .form .form-right a{
+    padding: .6rem 1.5rem;
+    background: var(--light-blue);
+    font-size: .8rem;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+
+
+.server .serverBody .table-body{
+    margin-top: 2rem;
+}
+.server .serverBody .table-body .table-top{
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+    font-weight: 600;
+    gap: .5rem;
+    justify-content: right;
+}
+.server .serverBody .table-body table{
+    width: 100%;
+    margin-top: 1rem;
+    font-size: .9rem;
+    text-align: center;
+    border: 0;
+}
+.server .serverBody .table-body table thead{
+    background: var(--body);
+    font-weight: 600;
+    color: #000B14;;
+}
+.server .serverBody .table-body table thead tr, .server .serverBody .table-body table tbody tr{
+    height: 3rem;
+}
+.server .serverBody .table-body table tbody tr{
+    border: 2px solid var(--text-black);
+}
+
+.server .serverBody .table-body table tbody tr td span.circle-green{
+    display: inline-block;
+    width: 15px;
+    border-radius: 50%;
+    height: 15px;
+    background: var(--green);
+    line-height: 15px;
+}
+.server .serverBody .table-body table tbody tr td span.circle-red{
+    display: inline-block;
+    width: 15px;
+    border-radius: 50%;
+    height: 15px;
+    background: var(--red);
+}
+.server .serverBody .table-body table tbody tr td a{
+    background: var(--light-blue);
+    padding: .5rem 1.5rem;
+    border-radius: 4px;
+}
+.server .serverBody .table-body table tbody tr td i{
+    color: var(--white);
+    font-size: .5rem;
+}
+.server .serverBody .pagination{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.server .serverBody .pagination .buttons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: .8rem;
+}
+.server .serverBody .pagination .buttons a{
+    color: var(--text-black);
+    font-weight: 600;
+}
+.server .serverBody .pagination .buttons a.active{
+    background: var(--light-blue);
+    color: var(--white);
+    padding: .5rem 1rem;
+}
+.server .serverBody .pagination .buttons a:hover{
+    background: var(--light-blue);
+    color: var(--white);
+    padding: .5rem 1rem;
+}
+
