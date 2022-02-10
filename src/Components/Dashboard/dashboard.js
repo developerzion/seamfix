@@ -320,7 +320,7 @@ const Dashboard =()=>{
                         </table>                      
 
                     </div>
-                    {/* <div className="pagination">
+                    <div className="pagination">
 
                         <div className="buttons">
                             <Link to="/">PREVIOUS</Link>
@@ -333,7 +333,7 @@ const Dashboard =()=>{
                             <Link to="/">NEXT</Link>
                         </div>
 
-                    </div> */}
+                    </div>
 
                 </div>
 

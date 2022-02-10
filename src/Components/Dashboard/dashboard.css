@@ -92,7 +92,6 @@
     top: 0;
     color: var(--text-black);
     padding: .6rem 1rem;
-
 }
 .serverTips .sTooltips .tips{
     width: 100%;
@@ -338,6 +337,7 @@
     font-size: .5rem;
 }
 .dashbaord .dashBody .pagination{
+    /* width: 50rem; */
     margin-top: 5rem;
     display: flex;
     align-items: center;
@@ -380,5 +380,20 @@
     }
     .dashbaord .dashBody .table-body table{
         font-size: .9rem;
+    }
+    .serverTips .sTooltips{
+        left: 7rem;
+    }
+    .tooltip{
+        right: 5rem;
+    }
+    .dashbaord .dashBody .pagination{
+        width: 50rem;
+    }
+    .deactivate .d-alert{
+        /* position: absolute; */
+        width: 20rem;
+     
+        padding: 2rem 1rem;
     }
 }
