@@ -219,6 +219,21 @@ header{
 
 
 /* Responsiveness */
+@media(max-width: 800px){
+    .headerPopup .newApplication{
+        width: 22rem ;
+        height: 35rem;
+        border-radius: 15px;
+        padding: 2rem;
+    }
+    .headerPopup .newApplication .form{
+        padding: 0rem;
+    }
+    .headerPopup .newApplication .form .formbody .cright .list .ip{
+        width: 11rem;
+        font-size: .8rem;
+    }
+}
 @media(max-width: 629px){
     .desktop{
         display: none;
@@ -232,6 +247,5 @@ header{
     .header-bottom .navbar a{
         gap: .1rem;
         font-size: .8rem;
-    } 
-    
+    }     
 }

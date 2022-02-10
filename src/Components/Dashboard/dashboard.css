@@ -391,9 +391,7 @@
         width: 50rem;
     }
     .deactivate .d-alert{
-        /* position: absolute; */
         width: 20rem;
-     
         padding: 2rem 1rem;
     }
 }
