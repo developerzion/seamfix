@@ -223,7 +223,7 @@
     text-align: center;
 }
 .dashbaord .dashcards .card .count h1{
-    background: var(--white);
+    background: var(--white); 
     font-size: 40px;
     font-weight: 400;
     color: var(--darkblue);
