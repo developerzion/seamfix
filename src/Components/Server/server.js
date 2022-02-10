@@ -26,19 +26,19 @@ const Dashboard =()=>{
                             <div className="formbody">
                                 <div className="form-group">
                                     <label>Server name</label>
-                                    <input type="text" required />
+                                    <input type="text" placeholder="Enter server name" required />
                                 </div>
                                 <div className="form-group">
                                     <label>Server IP</label>
-                                    <input type="text" required/>
+                                    <input type="text" placeholder="Enter server IP" required/>
                                 </div>
                                 <div className="form-group">
                                     <label>CPU</label>
-                                    <input type="text" required/>
+                                    <input type="text" placeholder="Enter CPU" required/>
                                 </div>
                                 <div className="form-group">
                                     <label>Storage</label>
-                                    <input type="text" required/>
+                                    <input type="text" placeholder="Enter storage size" required/>
                                 </div>
                             </div>
                         </div>

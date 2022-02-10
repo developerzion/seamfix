@@ -3,7 +3,9 @@
     --header-bottom-color: #FFFFFF;
     --light-blue: #49D3FF;
 }
-
+.padtop{
+    margin-top: 2rem;
+}
 header{
     position: fixed;
     top: 0; right: 0; left: 0;
@@ -40,8 +42,7 @@ header{
     align-items: center;
     background: var(--header-bottom-color);
     padding: 1.7rem 0rem;
-
-}
+} 
 .header-bottom .navbar a.active{
     border-bottom: 4px solid var(--light-blue);
 }
@@ -55,10 +56,154 @@ header{
     background: var(--header-bottom-color);    
 }
 
-.header-bottom .health-status a{
+.header-bottom .health-status span{
+    cursor: pointer;
     background: var(--light-blue);
     padding: 1rem 1.5rem;
     border-radius: .5rem;
     font-weight: 500;
     font-size: .8rem;
+}
+
+
+/* Start header popup   */
+.headerPopup{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    z-index: 100;
+    top: 0; left: 0; right: 0;
+    transition: all 1s ease-in-out; 
+    z-index: 1000;
+}
+.headerPopup.active{
+    display: inline-block;
+}
+.headerPopup .newApplication{
+    position: absolute;
+    top: 50%; left: 50%;
+    background: var(--white);
+    width: 45rem ;
+    height: 35rem;
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+    padding: 2rem 3rem;
+}
+.headerPopup .newApplication .form{
+    padding: 0 6rem;
+    margin: 0 auto;
+    position: relative;
+    width: 40rem;
+    height: 25rem;
+    margin-top: 2rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+}
+.headerPopup .newApplication .form::-webkit-scrollbar {
+    display: none; 
+}
+.headerPopup .newApplication .form span{
+    font-size: .9rem;
+    color: var(--text-black);
+}
+.headerPopup .newApplication .form .formbody{
+    display: flex;
+    gap: 2rem;
+    color: var();
+    font-size: .9rem;
+    color: #222222;
+}
+.headerPopup .newApplication .form .formbody .cleft{
+    flex: 1 1 5rem;
+    max-width: 5rem;
+}
+.headerPopup .newApplication .form .formbody .cleft h5{
+    font-size: .9rem;
+    font-weight: 400;
+}
+.headerPopup .newApplication .form .formbody .cright .checkbox{
+    margin-bottom: .7rem;
+}
+.headerPopup .newApplication .form .formbody .cright .list p{
+    margin-bottom: .7rem;
+}
+.headerPopup .newApplication .form .formbody .cright .list p:last-child{
+    margin-bottom: 0rem;
+}
+.headerPopup .newApplication .form .formbody .cright .list .ip{
+    width: 20rem;
+    min-height: 5rem;
+    border: 2px solid #4D4C4C29;
+    padding: .5rem 1rem;
+}
+
+/* Start popup footer buttons  */
+.popbuttons{
+    position: absolute;
+    bottom: 2.3rem;
+    right: 2rem;
+    font-size: .9rem;
+}
+.popbuttons .chs{
+    padding: .7rem 1.5rem;
+    background: var(--light-blue);
+    border-radius: 4px;
+    margin-left: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+.popbuttons .cancel{
+    background: var(--white);
+    cursor: pointer;
+}
+
+/* Start health status  */
+.healthStatusPop{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    z-index: 100;
+    top: 0; left: 0; right: 0;
+    transition: all 1s ease-in-out; 
+    z-index: 1000;
+}
+.healthStatusPop.active{
+    display: inline-block;
+}
+.healthStatusPop .newApplication{
+    position: absolute;
+    top: 50%; left: 50%;
+    background: var(--white);
+    width: 50rem ;
+    height: 30rem;
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+    padding: 2rem 3rem;
+}
+.healthStatusPop .newApplication .healthCards{
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+.healthStatusPop .newApplication .healthCards .card{
+    flex: 1 1 10rem;
+    min-width: 10rem;
+    min-height: 13rem;
+    box-shadow: 0px 1px 10px #4D4C4C29;
+    padding: 1.5rem;
+    font-size: .8rem;
+}
+.healthStatusPop .newApplication .healthCards .card .tips .tips-data{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 2rem;
+    padding: .5rem 0;
+    border-bottom: 1px solid #4D4C4C29;
 }

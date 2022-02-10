@@ -148,15 +148,15 @@ const Dashboard =()=>{
                                             <div className="sTooltips">
                                                 <div className="tips">
                                                     <div className="tips-data">
-                                                        <span><f className="fa fa-arrow-right"></f> Server 1: </span> 
+                                                        <span><span className="fa fa-arrow-right"></span> Server 1: </span> 
                                                         <span><span className="circle-green-small"></span> Running </span> 
                                                     </div>
                                                     <div className="tips-data">
-                                                        <span><f className="fa fa-arrow-right"></f> Server 2: </span> 
+                                                        <span><span className="fa fa-arrow-right"></span> Server 2: </span> 
                                                         <span> <span className="circle-green-small"></span> Running </span> 
                                                     </div>
                                                     <div className="tips-data">
-                                                        <span><f className="fa fa-arrow-right"></f> Server 3: </span> 
+                                                        <span><span className="fa fa-arrow-right"></span> Server 3: </span> 
                                                         <span><span className="circle-green-small"></span> Running </span> 
                                                     </div>
                                                 </div>
@@ -191,11 +191,11 @@ const Dashboard =()=>{
                                             <div className="sTooltips">
                                                 <div className="tips">
                                                     <div className="tips-data">
-                                                        <span><f className="fa fa-arrow-right"></f> Server 1: </span> 
+                                                        <span><span className="fa fa-arrow-right"></span> Server 1: </span> 
                                                         <span><span className="circle-green-small"></span> Running </span> 
                                                     </div>
                                                     <div className="tips-data">
-                                                        <span><f className="fa fa-arrow-right"></f> Server 2: </span> 
+                                                        <span><span className="fa fa-arrow-right"></span> Server 2: </span> 
                                                         <span> <span className="fa fa-times colorRed"></span> Critical </span> 
                                                     </div>
                                                 </div>
@@ -225,11 +225,11 @@ const Dashboard =()=>{
                                             <div className="sTooltips">
                                                 <div className="tips">
                                                     <div className="tips-data">
-                                                        <span><f className="fa fa-arrow-right"></f> Server 1: </span> 
+                                                        <span><span className="fa fa-arrow-right"></span> Server 1: </span> 
                                                         <span><span className="circle-green-small"></span> Running </span> 
                                                     </div>
                                                     <div className="tips-data">
-                                                        <span><f className="fa fa-arrow-right"></f> Server 2: </span> 
+                                                        <span><span className="fa fa-arrow-right"></span> Server 2: </span> 
                                                         <span><span className="circle-green-small"></span> Running </span> 
                                                     </div>
                                                 </div>
@@ -259,15 +259,15 @@ const Dashboard =()=>{
                                             <div className="sTooltips">
                                                 <div className="tips">
                                                     <div className="tips-data">
-                                                        <span><f className="fa fa-arrow-right"></f> Server 1: </span> 
+                                                        <span><span className="fa fa-arrow-right"></span> Server 1: </span> 
                                                         <span><span className="circle-green-small"></span> Running </span> 
                                                     </div>
                                                     <div className="tips-data">
-                                                        <span><f className="fa fa-arrow-right"></f> Server 2: </span> 
+                                                        <span><span className="fa fa-arrow-right"></span> Server 2: </span> 
                                                         <span><span className="circle-green-small"></span> Running </span> 
                                                     </div>
                                                     <div className="tips-data">
-                                                        <span><f className="fa fa-arrow-right"></f> Server 3: </span> 
+                                                        <span><span className="fa fa-arrow-right"></span> Server 3: </span> 
                                                         <span> <span className="fa fa-check"></span> Down </span> 
                                                     </div>
                                                 </div>
@@ -297,11 +297,11 @@ const Dashboard =()=>{
                                             <div className="sTooltips">
                                                 <div className="tips">
                                                     <div className="tips-data">
-                                                        <span><f className="fa fa-arrow-right"></f> Server 1: </span> 
+                                                        <span><span className="fa fa-arrow-right"></span> Server 1: </span> 
                                                         <span><span className="circle-green-small"></span> Running </span> 
                                                     </div>
                                                     <div className="tips-data">
-                                                        <span><f className="fa fa-arrow-right"></f> Server 2: </span> 
+                                                        <span><span className="fa fa-arrow-right"></span> Server 2: </span> 
                                                         <span><span className="circle-green-small"></span> Running </span> 
                                                     </div>                                                    
                                                 </div>

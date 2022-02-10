@@ -25,23 +25,23 @@ const Application =()=>{
                             <div className="formbody">
                                 <div className="form-group">
                                     <label>Application Name</label>
-                                    <input type="text" required />
+                                    <input type="text" placeholder="Enter application name" required />
                                 </div>
                                 <div className="form-group">
                                     <label>Application Type</label>
-                                    <input type="text" required/>
+                                    <input type="text" placeholder="Enter application type" required/>
                                 </div>
                                 <div className="form-group">
                                     <label>Application DCSC</label>
-                                    <input type="text" required/>
+                                    <input type="text" placeholder="Enter application DCSC" required/>
                                 </div>
                                 <div className="form-group">
                                     <label>Application Port</label>
-                                    <input type="text" required/>
+                                    <input type="text" placeholder="Enter application port number" required/>
                                 </div>
                                 <div className="form-group">
                                     <label>End Point</label>
-                                    <input type="text" required/>
+                                    <input type="text" placeholder="Enter end point" required/>
                                 </div>
                                 <div className="form-group">
                                     <label>Host/application</label>
@@ -59,11 +59,13 @@ const Application =()=>{
                                 </div>                               
                             </div>
                         </div>
+
                         <div className="buttons">
                             <span onClick={()=> document.querySelector(".applicationPopup").classList.remove("active")} className="cancel">Cancel</span>
                             <button className="create">Create</button>
                         </div>
                     </form>
+
                 </div>
             </div>
             <section id="application" className="application">                
