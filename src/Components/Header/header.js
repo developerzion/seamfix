@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 //Import images
 import Images from '../../importImages'
@@ -152,9 +152,9 @@ const Header =()=>{
                 </div>
                 <div className="header-bottom">
                     <div className="navbar">
-                        <Link className="active" to="/"><img src={Images.Home} alt="Home" /> <span className="text">Home</span></Link>
-                        <Link to="/server"><img src={Images.Server} alt="Server" /> <span className="text">Server</span></Link>
-                        <Link to="/application"><img src={Images.Application} alt="Application" /> <span className="text">Application</span></Link>
+                        <NavLink activeClassName="active" to="/"><img src={Images.Home} alt="Home" /> <span className="text">Home</span></NavLink>
+                        <NavLink activeClassName="active" to="/server"><img src={Images.Server} alt="Server" /> <span className="text">Server</span></NavLink>
+                        <NavLink activeClassName="active" to="/application"><img src={Images.Application} alt="Application" /> <span className="text">Application</span></NavLink>
                     </div>
                     <div className="health-status">
                         <span onClick={()=> document.querySelector(".headerPopup").classList.add("active")}>Check Health Status</span>
