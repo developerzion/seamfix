@@ -366,12 +366,12 @@
 
 
 /* Responsiveness */
-@media(max-width: 1268){
+/* @media(max-width: 1268){
     .desktop{
         display: none;
     }    
-}
-@media(max-width: 800px){
+} */
+@media(max-width: 800px){ 
     .dashbaord{
         padding: 0 1rem;
     } 

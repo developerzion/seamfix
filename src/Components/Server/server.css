@@ -72,9 +72,8 @@
 .serverPopup .newServer .form{
     margin: 0 auto;
     position: relative;
-    width:27rem;
-    height: 10rem;
-    /* background: red; */
+    width: 0rem;
+    width: 30rem;   
     margin-top: 2rem;
 }
 .serverPopup .newServer .form span{
@@ -90,6 +89,7 @@
 .serverPopup .newServer .form .formbody .form-group{
     display: flex;
     justify-content: space-between;
+    gap: 2rem;
     align-items: center;
     color: var(--text-black);
     font-size: .9rem;
@@ -128,12 +128,15 @@
     background: var(--white);
     margin-top: 2rem;
     padding: 2rem 3rem;
+    overflow-x: scroll;
+    box-shadow: 0px 1px 2px #00000029;  
 }
 .server .serverBody .form{
     background: var(--white);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem
 }
 .server .serverBody .form .form-left{
     display: flex;
@@ -178,12 +181,17 @@
     font-size: .8rem;
     font-weight: 600;
     border-radius: 4px;
+    min-width: 10rem;
 }
 
 
 
 .server .serverBody .table-body{
     margin-top: 2rem;
+    min-width: 55rem;
+    padding-right: 1rem;
+
+
 }
 .server .serverBody .table-body .table-top{
     display: flex;
@@ -263,3 +271,32 @@
     padding: .5rem 1rem;
 }
 
+
+@media(max-width: 800px){ 
+    .server{
+        padding: 0 1rem;
+    } 
+    .server .serverBody{
+        padding: 2rem 1rem;
+    }
+    .server .serverBody .table-body table{
+        font-size: .9rem;
+    }
+    .serverPopup .newServer{
+        width: 23rem;
+        border-radius: 15px;
+        padding: 2rem 1.3rem;
+    }
+    .serverPopup .newServer .form{
+        width: 20rem;
+    }
+    .serverPopup .newServer .form .formbody .form-group{
+        color: var(--text-black);
+        font-size: .9rem;
+    }
+    .serverPopup .newServer .form .formbody .form-group input{
+        width: 190px;
+    }
+ 
+  
+}

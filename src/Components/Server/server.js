@@ -13,7 +13,7 @@ const Dashboard =()=>{
     function onSubmit(e){
         e.preventDefault()
     }
-  
+   
     return (
         <>
             <Header />
@@ -71,7 +71,7 @@ const Dashboard =()=>{
                             </div>   
                         </div>
                         <div className="form-right">
-                            <span onClick={()=> document.querySelector(".serverPopup").classList.add("active") }>Create Server</span>
+                            <span onClick={()=> document.querySelector(".serverPopup").classList.add("active") }>CreateServer</span>
                         </div>
                                         
                     </div>
