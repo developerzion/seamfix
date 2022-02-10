@@ -49,7 +49,7 @@ const Application =()=>{
                                 </div> 
 
                                 <div className="selectApp">
-                                    <span>Select Application</span>
+                                    <span>Select Application</span> 
                                     <div className="ip">
                                         <p><input type="checkbox" /> 10.1.101.53</p>
                                         <p><input type="checkbox" /> 10.1.101.54</p>
@@ -87,7 +87,7 @@ const Application =()=>{
                             </div>    
                         </div> 
                         <div className="form-right">
-                            <span onClick={()=> document.querySelector(".applicationPopup").classList.add("active")}>Add Application</span>
+                            <span onClick={()=> document.querySelector(".applicationPopup").classList.add("active")}>AddApplication</span>
                         </div>                                        
                     </div>
 
@@ -106,7 +106,7 @@ const Application =()=>{
                                     <td>APPLICATION DCSC</td>
                                     <td>APPLICATION PORT</td>
                                     <td>END PORT</td>
-                                    <td>HOST/application</td>
+                                    <td>HOST/SERVER</td>
                                     <td>ACTION</td>
                                     <td></td>
                                 </tr>

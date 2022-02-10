@@ -184,14 +184,10 @@
     min-width: 10rem;
 }
 
-
-
 .server .serverBody .table-body{
     margin-top: 2rem;
     min-width: 55rem;
     padding-right: 1rem;
-
-
 }
 .server .serverBody .table-body .table-top{
     display: flex;
@@ -283,10 +279,10 @@
         font-size: .9rem;
     }
     .serverPopup .newServer{
-        width: 23rem;
+        width: 22rem;
         border-radius: 15px;
         padding: 2rem 1.3rem;
-    }
+    } 
     .serverPopup .newServer .form{
         width: 20rem;
     }
@@ -296,7 +292,6 @@
     }
     .serverPopup .newServer .form .formbody .form-group input{
         width: 190px;
-    }
- 
+    } 
   
 }
