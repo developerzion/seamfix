@@ -25,10 +25,8 @@ const Dashboard =()=>{
                     <p>Are you sure you want to deactivate <b>Server name 1?</b> if you <b>Continue you will no longer receive data from this server</b></p>
                     <div className="btn">
                         <span className="btn-dactive">Deactivate</span>
-
                     </div>
                 </div>
-
             </div>
             <section id="dashbaord" className="dashbaord">
 
@@ -40,38 +38,36 @@ const Dashboard =()=>{
                         <div className="stats">
                             <div className="stat">
                                 <span className="bullet border">10</span>
+                                <br/><span className="text">All</span>
                             </div>
                             <div className="stat">
                                 <span className="bullet green">6</span>
+                                <br/><span className="text">Available</span>
                             </div>
                             <div className="stat">
                                 <span className="bullet red">4</span>
+                                <br/><span className="text">Critical</span>
                             </div>
                         </div>
-                        <div className="text">
-                            <span>All</span>
-                            <span>Available</span>
-                            <span>Critical</span>
-                        </div>
+                       
                     </div>
                     <div className="card">
                         <h4>Servers</h4>
                         <div className="stats">
                             <div className="stat">
                                 <span className="bullet border">4</span>
+                                <br/><span className="text">All</span>
                             </div>
                             <div className="stat">
                                 <span className="bullet green">2</span>
+                                <br/><span className="text">Active</span>
                             </div>
                             <div className="stat">
                                 <span className="bullet gold">2</span>
+                                <br/><span className="text">Inactive</span>
                             </div>
                         </div>
-                        <div className="text">
-                            <span>All</span>
-                            <span>Active</span>
-                            <span>Inactive</span>
-                        </div>
+                     
                     </div>
                     <div className="card">
                         <h4>Health check counts</h4>
@@ -324,7 +320,7 @@ const Dashboard =()=>{
                         </table>                      
 
                     </div>
-                    <div className="pagination">
+                    {/* <div className="pagination">
 
                         <div className="buttons">
                             <Link to="/">PREVIOUS</Link>
@@ -337,7 +333,7 @@ const Dashboard =()=>{
                             <Link to="/">NEXT</Link>
                         </div>
 
-                    </div>
+                    </div> */}
 
                 </div>
 

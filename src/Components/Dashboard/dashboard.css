@@ -168,9 +168,9 @@
     gap: 1rem;
 }
 .dashbaord .dashcards .card{
-    flex: 1 1 24rem;
+    flex: 1 1 20rem;
     height: 12rem;
-    max-width: 24rem;
+    min-width: 20rem;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 1px 2px #00000029;
     opacity: 1;
@@ -183,6 +183,7 @@
 }
 
 .dashbaord .dashcards .card .stats{
+    text-align: center;
     margin-top: 1.5rem;
     background: var(--white);
     display: flex;
@@ -193,7 +194,11 @@
     background: var(--white);
 }
 .dashbaord .dashcards .card .stats .stat .text{
+    margin-top: 1rem;
     background: var(--white);
+    display: flex;
+    gap: 3.8rem;
+    margin-top: 1rem;
 }
 .dashbaord .dashcards .card .stats .stat span.bullet{
     font-size: 17px;
@@ -204,18 +209,8 @@
     text-align: center;
     border-radius: 50%;
 }
-.dashbaord .dashcards .card .text{
-    display: flex;
-    gap: 3.8rem;
-    background: var(--white);
-    margin-top: 1rem;
-    padding: 0 1.5rem;
-}
-.dashbaord .dashcards .card .text span{
-    width: 100%;
-    background: var(--white);
-    text-align: center;
-}
+
+
 
 .dashbaord .dashcards .card .count{
     margin-top: 2rem;
@@ -241,13 +236,15 @@
     background: var(--white);
     margin-top: 2rem;
     padding: 2rem 3rem;
+    overflow-x: scroll;
+    box-shadow: 0px 1px 2px #00000029;    
 }
-.dashbaord .dashBody .form{
-    background: var(--white);
-}
+
 .dashbaord .dashBody .form{
     display: flex;
     gap: 1rem;
+    min-width: 50rem;
+
 }
 .dashbaord .dashBody .form .field-body-input{
     display: flex;
@@ -284,7 +281,10 @@
 
 
 .dashbaord .dashBody .table-body{
+    min-width: 55rem;
     margin-top: 2rem;
+    padding-right: 1rem;
+
 }
 .dashbaord .dashBody .table-body .table-top{
     display: flex;
@@ -364,3 +364,21 @@
     padding: .5rem 1rem;
 }
 
+
+/* Responsiveness */
+@media(max-width: 1268){
+    .desktop{
+        display: none;
+    }    
+}
+@media(max-width: 800px){
+    .dashbaord{
+        padding: 0 1rem;
+    } 
+    .dashbaord .dashBody{
+        padding: 2rem 1rem;
+    }
+    .dashbaord .dashBody .table-body table{
+        font-size: .9rem;
+    }
+}

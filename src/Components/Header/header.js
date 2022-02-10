@@ -152,9 +152,9 @@ const Header =()=>{
                 </div>
                 <div className="header-bottom">
                     <div className="navbar">
-                        <NavLink className="active" to="/"><img src={Images.Home} alt="Home" /> <span className="text">Home</span></NavLink>
-                        <NavLink className="active" to="/server"><img src={Images.Server} alt="Server" /> <span className="text">Server</span></NavLink>
-                        <NavLink className="active" to="/application"><img src={Images.Application} alt="Application" /> <span className="text">Application</span></NavLink>
+                        <NavLink activeClassName="active" to="/"><img src={Images.Home} alt="Home" /> <span className="text">Home</span></NavLink>
+                        <NavLink activeClassName="active" to="/server"><img src={Images.Server} alt="Server" /> <span className="text">Server</span></NavLink>
+                        <NavLink activeClassName="active" to="/application"><img src={Images.Application} alt="Application" /> <span className="text">Application</span></NavLink>
                     </div>
                     <div className="health-status">
                         <span className="fa fa-edit mobile" onClick={()=> document.querySelector(".headerPopup").classList.add("active")}></span>

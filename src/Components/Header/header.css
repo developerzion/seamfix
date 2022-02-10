@@ -8,11 +8,11 @@
 }
 .mobile{
     display: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
     border-radius: 6px;
-    color: var(--header-top-color);
+    color: var(--header-bottom-color);
     padding: .5rem;
-    background: var(--light-blue);
+    background: var(--header-top-color);
 
 }
 header{
@@ -226,5 +226,12 @@ header{
     .mobile{
         display: inline-block;
     }
+    .header-bottom .navbar{
+        gap: 1rem;
+    }
+    .header-bottom .navbar a{
+        gap: .1rem;
+        font-size: .8rem;
+    } 
     
 }
