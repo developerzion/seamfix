@@ -196,6 +196,7 @@ header{
 }
 .healthStatusPop .newApplication .healthCards{
     display: flex;
+    flex-wrap: wrap;
     gap: 3rem;
     justify-content: space-between;
     align-items: center;
@@ -203,7 +204,6 @@ header{
 }
 .healthStatusPop .newApplication .healthCards .card{
     flex: 1 1 10rem;
-    min-width: 10rem;
     min-height: 13rem;
     box-shadow: 0px 1px 10px #4D4C4C29;
     padding: 1.5rem;
@@ -219,6 +219,20 @@ header{
 
 
 /* Responsiveness */
+@media(max-width:900px){
+    .healthStatusPop .newApplication{        
+        width: 22rem ;
+        height: 41rem ;
+        border-radius: 15px;
+        transform: translate(-50%, -50%);
+        padding: 2rem;
+    }
+    .healthStatusPop .newApplication .healthCards{
+        gap: .5rem;
+        margin-top: 0rem;
+        padding: 1rem;
+    }
+}
 @media(max-width: 800px){
     .headerPopup .newApplication{
         width: 22rem ;
